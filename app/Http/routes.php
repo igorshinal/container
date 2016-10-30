@@ -11,9 +11,41 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', [
+    'uses' => 'HomeController@index',
+    'as' => 'home'
+]);
+
+// Маршруты аутентификации...
+
+
+Route::get('login', [
+    'uses' => 'Auth\AuthController@getLogin',
+    'as' => 'auth.login'
+]);
+
+Route::post('login', [
+    'uses' => 'Auth\AuthController@postLogin',
+]);
+
+Route::get('logout', [
+    'uses' => 'Auth\AuthController@getLogout',
+    'as' => 'auth.logout'
+]);
+
+
+// Маршруты регистрации...
+
+Route::get('register', [
+    'uses' => 'Auth\AuthController@getRegister',
+    'as' => 'auth.register'
+]);
+
+Route::post('register', [
+    'uses' => 'Auth\AuthController@postRegister',
+]);
+
 
 
 

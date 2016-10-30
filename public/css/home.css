@@ -1,0 +1,65 @@
+body {
+    background-color: #dfe6ed;
+}
+
+.container-fluid {
+    height: 100vh;
+    display: table;
+    width: 100%;
+    padding: 0;
+}
+.register-page-form-wrap {
+    text-align: center;
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+}
+.register-page-form-body {
+    float: none;
+    margin: 0 auto;
+}
+.form-control {
+    border-radius: 0;
+    width: 280px;
+}
+
+form {
+    display: inline-block;
+}
+.form-control {
+    height: 40px;
+    background-color: #fff;
+    border: 0;
+    box-shadow: none;
+    color: #dfe6ed;
+    font-size: 17px;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.form-control::-webkit-input-placeholder {color: #dfe6ed;}
+.form-control::-moz-placeholder {color: #dfe6ed;}
+.form-control:-ms-input-placeholder {color: #dfe6ed;}
+.btn-success {
+    border-radius: 0;
+    height: 40px;
+    background-color: #fff;
+    border-color: #fff;
+    color: #dfe6ed;
+}
+.custom-link {
+    padding-top: 9px;
+}
+.btn-success.active, .btn-success:hover, .btn-success:focus, .btn-success:active, .open > .dropdown-toggle.btn-success {
+    background-color: #fff!important;
+    border-color: #fff!important;
+    outline: none!important;
+    color: #dfe6ed;
+}
+.error-block-custom {
+    height: 20px;
+    color: #fff;
+}
+
+
+
